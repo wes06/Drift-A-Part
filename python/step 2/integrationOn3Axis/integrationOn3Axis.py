@@ -2,7 +2,7 @@ import csv
 from collections import defaultdict
 
 
-with open('../mockCSVGenerator/mockCSVData.csv', newline='') as csvfile:
+with open('../mockCSVGenerator-rdmUnsigned/mockCSVData.csv', newline='') as csvfile:
 	IMUData = csv.DictReader(csvfile) # read rows into a dictionary format
 	#print("Fieldnames are " + str(IMUData.fieldnames))
 	#print("\n")
@@ -10,12 +10,15 @@ with open('../mockCSVGenerator/mockCSVData.csv', newline='') as csvfile:
 	#starting vars
 	velX = 0
 	posX = 0
+	distX = 0
 	previousAccX = 0
 	velY = 0
 	posY = 0
+	distY = 0
 	previousAccY = 0
 	velZ = 0
 	posZ = 0
+	distZ = 0
 	previousAccZ = 0
 
 	previousTimestamp = 0
@@ -48,6 +51,12 @@ with open('../mockCSVGenerator/mockCSVData.csv', newline='') as csvfile:
 		posY += velY * deltaT
 		posZ += velZ * deltaT
 
+		# dist: total elapsed distance
+		# i.e. moving forward 1m and back 1m counts as 2m
+		distX += abs(velX * deltaT)
+		distY += abs(velY * deltaT)
+		distZ += abs(velZ * deltaT)
+
 		# save the timestant to calculate next deltaT
 		previousTimestamp = int(row['timestamp'])
 
@@ -64,12 +73,15 @@ print('Integrated %i data points.\n' % dataPointCt)
 print('X\tFinal speed:\t\t %.2f m/s' % velX)
 print('\tFinal position:\t\t %.2f m' % posX)
 print('\tAverage speed:\t\t %.2f m/s' % avgVelX)
+print('\tElapsed distance:\t %.2f m' % distX)
 
 print('\nY\tFinal speed:\t\t %.2f m/s' % velY)
 print('\tFinal position:\t\t %.2f m' % posY)
 print('\tAverage speed:\t\t %.2f m/s' % avgVelY)
+print('\tElapsed distance:\t %.2f m' % distY)
 
 print('\nZ\tFinal speed:\t\t %.2f m/s' % velZ)
 print('\tFinal position:\t\t %.2f m' % posZ)
-print('\tAverage speed:\t\t %.2f m/s \n' % avgVelZ)
+print('\tAverage speed:\t\t %.2f m/s' % avgVelZ)
+print('\tElapsed distance:\t %.2f m\n' % distZ)
 
