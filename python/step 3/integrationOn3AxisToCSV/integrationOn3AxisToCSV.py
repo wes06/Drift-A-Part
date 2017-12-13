@@ -4,17 +4,22 @@ from collections import defaultdict
 
 with open('../mockCSVGenerator-rdmUnsigned/mockCSVData.csv', newline='') as in_csvfile, open('positions.csv', 'w') as out_csvfile:
 	
+	# columns for output CSV file
 	fieldnames = ['posX', 'posY', 'posZ', 'timestamp']
-	writer = csv.DictWriter(out_csvfile, fieldnames=fieldnames)
 
-	writer.writeheader()
-	#writer.writerow({'first_name': 'Baked', 'last_name': 'Beans'})
-	#writer.writerow({'first_name': 'Lovely', 'last_name': 'Spam'})
-	#writer.writerow({'first_name': 'Wonderful', 'last_name': 'Spam'})
+	# initialize writer
+	posData = csv.DictWriter(out_csvfile, fieldnames=fieldnames)
 
-	IMUData = csv.DictReader(in_csvfile) # read rows into a dictionary format
-	#print("Fieldnames are " + str(IMUData.fieldnames))
-	#print("\n")
+	# write column names to output CSV file
+	posData.writeheader()
+
+	# read rows into a dictionary format
+	IMUData = csv.DictReader(in_csvfile) 
+
+	# I/O fieldnames
+	print("Input fieldnames are " + str(IMUData.fieldnames))
+	print("Output fieldnames are " + str(posData.fieldnames))
+	print("\n")
 
 	#starting vars
 	velX = 0
@@ -70,22 +75,24 @@ with open('../mockCSVGenerator-rdmUnsigned/mockCSVData.csv', newline='') as in_c
 		# save the timestant to calculate next deltaT
 		previousTimestamp = int(row['timestamp'])
 
+		# add a read datapoint to counter
 		dataPointCt += 1
 
-		writer.writerow({
+		# output info to CSV
+		posData.writerow({
 			'posX': '%0.8f' % posX,
 			'posY': '%0.8f' % posY,
 			'posZ': '%0.8f' % posZ,
 			'timestamp': int(row['timestamp'])
 			})
 
-
+# average speed calculation, assumes first timestamp = 0
 avgVelX = posX/(previousTimestamp/1000)
 avgVelY = posY/(previousTimestamp/1000)
 avgVelZ = posZ/(previousTimestamp/1000)
 
-print('Integrated %i data points.\n' % dataPointCt)
 
+print('Integrated %i data points.\n' % dataPointCt)
 
 print('X\tFinal speed:\t\t %.2f m/s' % velX)
 print('\tFinal position:\t\t %.2f m' % posX)
