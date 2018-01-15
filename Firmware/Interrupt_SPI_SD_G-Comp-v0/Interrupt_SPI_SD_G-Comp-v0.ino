@@ -59,10 +59,10 @@ int calSampleCount = 0;
 int calSampleToCount = 100;
 
 int sampleCount = 0;
-int sampleToCount = 100000;
+int sampleToCount = 1000000;
 
 float accX, accY, accZ;
-int timestamp;
+float timestamp;
 
 bool dataReady = false;
 
@@ -129,7 +129,7 @@ void setup() {
 
   // setting SRD to 19 for a 50 Hz update rate
   // SAMPLE_RATE= Internal_Sample_Rate / (1 + SMPLRT_DIV)
-  IMU.setSrd(49);
+  IMU.setSrd(19);
 
   // enabling the data ready interrupt
   IMU.enableDataReadyInterrupt();
@@ -166,25 +166,22 @@ void loop() {
       display.print(" %");
       display.display();
     }
-    else if (!(sampleCount <= sampleToCount)) {
+    else if (sampleCount <= sampleToCount) {
       display.clearDisplay();
       display.setCursor(0, 0);
-      display.print("DataCount: \n");
-      display.print(float(sampleCount) / float(sampleToCount) * 100, 1);
-      display.print(" %");
+      display.print("Sample #");
+      display.print("\n");
+      display.print(sampleCount);
+      display.print(" of");
+      display.print("\n");
+      display.print(sampleToCount);
+      //display.setTextSize(1);
+      //display.print("\n\nSamples taken");
       display.display();
 
-      Serial.print("Button: ");
-      if (touchRead(23) > 1000) {
-        Serial.print("1");
-      }
-      else {
-        Serial.print("0");
-      }
-      Serial.print("\t");
-      lasti2cPrint = millis();
-    }
 
+    }
+    lasti2cPrint = millis();
 
   }
 
@@ -193,6 +190,21 @@ void loop() {
 
 
   if (dataReady) {
+
+    Serial.print("Sample #: ");
+    Serial.print(sampleCount);
+    Serial.print("\t");
+
+    
+    Serial.print("Button: ");
+    if (touchRead(23) > 1000) {
+      Serial.print("1");
+    }
+    else {
+      Serial.print("0");
+    }
+    Serial.print("\t");
+
     accGravComp[GravCompToChange] = IMU.getAccelZ_mss();
     GravCompToChange++;
     if (GravCompToChange > GRAVITY_COMP_CNT) {
@@ -211,7 +223,7 @@ void loop() {
       // open the file. note that only one file can be open at a time,
       // so you have to close this one before opening another.
       startWrite = micros();
-      File dataFile = SD.open("datalog6.csv", FILE_WRITE);
+      File dataFile = SD.open("1000001.csv", FILE_WRITE);
       // if the file is available, write to it:
       if (dataFile) {
         sampleCount++;
@@ -225,32 +237,21 @@ void loop() {
         dataFile.close();
         dataReady = false;
         // print to the serial port too:
-        Serial.print("SD: \t");
+        Serial.print("\tX: ");
         if (accX >= 0) Serial.write(" ");
         Serial.print(accX, 8);
-        Serial.write("\t");
+        Serial.write("\tY: ");
         if (accY >= 0) Serial.write(" ");
         Serial.print(accY, 8);
-        Serial.write("\t");
+        Serial.write("\tZ: ");
         if (accZ >= 0) Serial.write(" ");
         Serial.print(accZ, 8);
-        Serial.write("\t");
-        Serial.print(timestamp);
+        Serial.write("\tdT: ");
+        Serial.print(timestamp, 3);
         Serial.print("\twritetime: ");
         Serial.print(micros() - startWrite);
         Serial.println();
 
-        display.clearDisplay();
-        display.setCursor(0, 0);
-        display.print("Sample #");
-        display.print("\n");
-        display.print(sampleCount);
-        display.print(" of");
-        display.print("\n");
-        display.print(sampleToCount);
-        //display.setTextSize(1);
-        //display.print("\n\nSamples taken");
-        display.display();
       }    // if the file isn't open, pop up an error:
       else {
         Serial.println("error opening datalog.csv");
@@ -291,17 +292,7 @@ void getIMU() {
     accX = IMU.getAccelX_mss() - accelXOffset;
     accY = IMU.getAccelY_mss() - accelYOffset;
     accZ = IMU.getAccelZ_mss() - accelZOffset;
-    timestamp = int(ceil(float(micros() - lastMicros) / 1000));
-    //Serial.print(micros() - lastMicros);
-    //Serial.print("\t");
-    //Serial.print(IMU.getAccelX_mss() - accelXOffset, 20);
-    //Serial.print("\t");
-    //Serial.print(IMU.getAccelY_mss() - accelYOffset, 20);
-    //Serial.print("\t");
-    //Serial.print(IMU.getAccelZ_mss() - accelZOffset, 20);
-    //Serial.print("\t");
-    //Serial.print("\n");
-
+    timestamp = float(micros() - lastMicros) / 1000.00;
     dataReady = true;
   }
   else if (calibrating) {
@@ -324,6 +315,5 @@ void getIMU() {
     Serial.print(calSampleToCount);
     Serial.print(" done. \n");
   }
-  lastMicros = micros();
 
 }
