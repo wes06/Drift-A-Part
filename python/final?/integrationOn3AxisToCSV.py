@@ -11,25 +11,20 @@ dir = path.dirname(__file__)
 
 timestr = time.strftime("%Y%m%d-%H%M%S")
 
-with open('refPos.csv', 'w') as out_csvreffile:
-	# columns for output CSV file
-	fieldnames = ['refPosX', 'refPosY', 'refPosZ']
 
-	# initialize writer
-	refPosData = csv.DictWriter(out_csvreffile, fieldnames=fieldnames)
 
-	for x in range(-2,2):
-		refPos = pow(10,(x*3))
-		print('pos: %.6f,' % refPos)
-		logPos = math.log10(abs(refPos*10000))
-		print('log pos: %.6f,' % logPos)
-			# output info to CSV
-		refPosData.writerow({
-			'refPosX': '%0.6f' % logPos,
-			'refPosY': '%0.6f' % logPos,
-			'refPosZ': '%0.6f' % logPos
-			})
-	
+#import numpy as np
+#
+#def appendSpherical_np(xyz):
+#    ptsnew = np.hstack((xyz, np.zeros(xyz.shape)))
+#    xy = xyz[:,0]**2 + xyz[:,1]**2
+#    ptsnew[:,3] = np.sqrt(xy + xyz[:,2]**2)
+#    ptsnew[:,4] = np.arctan2(np.sqrt(xy), xyz[:,2]) # for elevation angle defined from Z-axis down
+#    #ptsnew[:,4] = np.arctan2(xyz[:,2], np.sqrt(xy)) # for elevation angle defined from XY-plane up
+#    ptsnew[:,5] = np.arctan2(xyz[:,1], xyz[:,0])
+#    return ptsnew
+#
+
 
 
 with open(path.join(dir, "..","..","datalogs","20180115-16h57m.CSV"), newline='') as in_csvfile, open('output/positions-log10-{}.csv'.format(timestr), 'w') as out_csvfile:
@@ -115,28 +110,48 @@ with open(path.join(dir, "..","..","datalogs","20180115-16h57m.CSV"), newline=''
 		
 		print('posX: %.6f,\tposY: %.6f,\tposZ: %.6f,\tdT: %.3f' % (posX, posY, posZ, deltaT))
 
-		if posX < 0:
-			logPosX = math.log10(abs(posX*10000)) * (-1)
-		else:
-			logPosX = math.log10(abs(posX*10000))
 
-		if posY < 0:
-			logPosY = math.log10(abs(posY*10000)) * (-1)
-		else:
-			logPosY = math.log10(abs(posY*10000))
-
-		if posZ < 0:
-			logPosZ = math.log10(abs(posZ*10000)) * (-1)
-		else:
-			logPosZ = math.log10(abs(posZ*10000))
+		#if (abs(posX)*1000000) < 1:
+		#		if posX < 0:
+		#			posX = -1/1000000
+		#		else:
+		#			posX = 1/1000000
+		#
+		#if (abs(posY)*1000000) < 1:
+		#		if posY < 0:
+		#			posY = -1/1000000
+		#		else:
+		#			posY = 1/1000000
+		#
+		#if (abs(posZ)*1000000) < 1:
+		#		if posZ < 0:
+		#			posZ = -1/1000000
+		#		else:
+		#			posZ = 1/1000000
+		#
+		#
+		#if posX < 0:
+		#
+		#	logPosX = math.log10(abs(posX*1000000)) * (-1)
+		#else:
+		#	logPosX = math.log10(abs(posX*1000000))
+		#
+		#if posY < 0:
+		#	logPosY = math.log10(abs(posY*1000000)) * (-1)
+		#else:
+		#	logPosY = math.log10(abs(posY*1000000))
+		#
+		#if posZ < 0:
+		#	logPosZ = math.log10(abs(posZ*1000000)) * (-1)
+		#else:
+		#	logPosZ = math.log10(abs(posZ*1000000))
 
 		if dataPointCt < 10000:
-			
 			# output info to CSV
 			posData.writerow({
-				'posX': '%0.6f' % logPosX,
-				'posY': '%0.6f' % logPosY,
-				'posZ': '%0.6f' % logPosZ
+				'posX': '%0.6f' % posX,#logPosX,
+				'posY': '%0.6f' % posY,#logPosY,
+				'posZ': '%0.6f' % posZ#logPosZ
 				})
 		else:
 			break
