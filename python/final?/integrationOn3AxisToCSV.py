@@ -31,7 +31,12 @@ baseUnit = {
  	}
 
 baseUnitToUse = "microMeter"
-writeOutCSVHeader = False
+
+# do not write header to CSV, (Rhino/GH doesnt like it)
+writeOutCSVHeader = False 
+
+# should the script generate reference positions for the points?
+generateRefPositionFile = False 
 
 dir = os.path.dirname(__file__)
 timestr = time.strftime("%Y%m%d-%H%M%S")
@@ -221,8 +226,70 @@ except:
 
 
 
+if generateRefPositionFile:
+	# will be viewed linearly in ""log space""
+	with open('output/refPos-{}-log10.csv'.format(timestr), 'w') as out_csvreffile:
+	
+		# columns for output CSV file
+		fieldnames = ['refPosX', 'refPosY', 'refPosZ']
+	
+		# initialize writer
+		refPosData = csv.DictWriter(out_csvreffile, fieldnames=fieldnames)
+	
+		for x in range(-2,2):
+			for y in range(-2,2):
+				for z in range(-2,2):
 
+					logRefPosX = 10**(x*3)
+					logRefPosY = 10**(y*3)
+					logRefPosZ = 10**(z*3)
+			
+					#print('posX: \t%.6f,\tposY: \t%.6f,\tposZ: \t%.6f,' % (refPosX, refPosY, refPosZ))
+			
+					logRefPosX = math.log10(abs(logRefPosX/baseUnit[baseUnitToUse]))
+					logRefPosY = math.log10(abs(logRefPosY/baseUnit[baseUnitToUse]))
+					logRefPosZ = math.log10(abs(logRefPosZ/baseUnit[baseUnitToUse]))
+			
+					print('Log - posX: %.1f,\tposY: %.1f,\tposZ: %.1f,' % (logRefPosX, logRefPosY, logRefPosZ))
+			
+					# output info to CSV
+					refPosData.writerow({
+						'refPosX': '%0.6f' % logRefPosX,
+						'refPosY': '%0.6f' % logRefPosY,
+						'refPosZ': '%0.6f' % logRefPosZ
+						})
 
+	# will be viewed logarythmicaly in ""log space""
+	with open('output/refPos-{}-linear.csv'.format(timestr), 'w') as out_csvreffile:
+	
+		# columns for output CSV file
+		fieldnames = ['refPosX', 'refPosY', 'refPosZ']
+	
+		# initialize writer
+		refPosData = csv.DictWriter(out_csvreffile, fieldnames=fieldnames)
+		for p in range(0, 1):
+			for x in range(1,1000):
+				for y in range(1,2):
+					for z in range(1,2):
+	
+						refPosX = x*0.000001*(10**(p*3))
+						refPosY = y*0.000001*(10**(p*3))
+						refPosZ = z*0.000001*(10**(p*3))
+				
+						#print('posX: \t%.6f,\tposY: \t%.6f,\tposZ: \t%.6f,' % (refPosX, refPosY, refPosZ))
+						logRefPosX = math.log10(abs(refPosX/baseUnit[baseUnitToUse]))
+						logRefPosY = math.log10(abs(refPosY/baseUnit[baseUnitToUse]))
+						logRefPosZ = math.log10(abs(refPosZ/baseUnit[baseUnitToUse]))
+				
+						print('Linear - posX: %.4f,\tposY: %.4f,\tposZ: %.4f,' % (logRefPosX, logRefPosY, logRefPosZ))
+				
+						# output info to CSV
+						refPosData.writerow({
+							'refPosX': '%0.6f' % logRefPosX,
+							'refPosY': '%0.6f' % logRefPosY,
+							'refPosZ': '%0.6f' % logRefPosZ
+							})
 
+	print("ref positions file generated")
 
 
