@@ -45,7 +45,7 @@ log10FileName = 'output/positions-{}-log10.csv'.format(timestr)
 linearFileName = 'output/positions-{}-linear.csv'.format(timestr)
 
 try:	
-	with open(os.path.join(dir, "..","..","datalogs","20180115-16h57m.CSV"), newline='') as in_csvfile, \
+	with open(os.path.join(dir, "..","..","datalogs","bla20180115bb.CSV"), newline='') as in_csvfile, \
 		 open(log10FileName, 'w') as log10_out_csvfile, \
 		 open(linearFileName.format(timestr), 'w') as linear_out_csvfile:
 		
@@ -171,8 +171,7 @@ try:
 			else:
 				logPosZ = math.log10(abs(logPosZ/baseUnit[baseUnitToUse]))
 	
-	
-	
+
 			# write datapoints do file until u have 10k points, then break out of loop
 			if dataPointCt < 10000:
 				# output info to CSVs
@@ -271,7 +270,7 @@ if generateRefPositionFile:
 			for x in range(1,1000):
 				for y in range(1,2):
 					for z in range(1,2):
-	
+						
 						refPosX = x*0.000001*(10**(p*3))
 						refPosY = y*0.000001*(10**(p*3))
 						refPosZ = z*0.000001*(10**(p*3))
@@ -291,5 +290,3 @@ if generateRefPositionFile:
 							})
 
 	print("ref positions file generated")
-
-
