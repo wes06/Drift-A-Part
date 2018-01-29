@@ -7,7 +7,7 @@
 ### Python:
 
 	Validation:
-	(can **random acceleration** data generate interesting shapes? If yes, continue)
+	(can ** random acceleration ** data generate interesting shapes? If yes, continue)
 		 - Script to generate mock data with predictable/calculatable results 
 		 	(i.e.: 
 		 		AccelX: 10m/sˆ2
