@@ -53,8 +53,14 @@ Can **real noise from acceleration data** generate interesting shapes?
 
 
 Validation:
-Using **log-log graphs as a reference**, transform the data in 3D space.
-	 - 
+Can **log-log graphs**, make the interesting shapes in different scales all visible at the same time in 3D space?
+
+	 - Implementation of log() conversion in Cartesian (XYZ) space.
+	 	(log operation is done on each axis individually,
+	 	this results in a heavy distortion of the shape, 
+	 	it always crosses the quadrant planes perpendicularlly)
+	 - Correction of log() implementation, now using Spherical (Radius, elevation, Azimuth) space.
+	 	(log operation is done only on radius)
 	
 
 
