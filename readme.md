@@ -2,9 +2,9 @@
 # Drift a part
 
 
-## STEPS
+### DEVELOPMENT STEPS
 
-### Python:
+### Python (data modification):
 
 Validation:
 Can __random acceleration__ data generate interesting shapes?
@@ -63,7 +63,13 @@ Can **log-log graphs** make the interesting shapes in different scales all visib
 	 	(log operation is done only on radius)
 	
 #### Python stable status:
-	
+	 - XYZ Acceleration noise data is imported into python
+	 - XYZ Acceleration is integrated into XYZ speed
+	 - XYZ Speed is integrated into XYZ positions
+	 - XYZ positions are converted into Spherical positions
+	 - Radius from spherical coordinates are changed into log scale
+	 - Log Spherical positions are transformed into XYZ positions
+	 - A CSV point cloud is exported
 
 
 ### Firmware:
