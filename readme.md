@@ -101,10 +101,14 @@ Data is then logged into an SD card.
 
 ### PCB HOLDERS
 
+3D printed supports for the datalogger
+
 	 - Teensy + MPU
 	 - Teensy + MPU + OLED + Capacitive button
 
 ### LED HOLDERS
+
+3D printed + carbon fiber parts for the LED extension for the Kuka Robot
 
 	 - STL with mock dimensions to test mesh import into Grasshopper
 	 	(i.e.: "extension" parallel to flange axis, thus wasting one axis :( )
