@@ -5,23 +5,34 @@ import time
 from collections import defaultdict
 
 import os
-#from os import path
+
+import numpy as np
 
 
 
 
-#	# eventual cartesian to spherical conversion
-#import numpy as np
+def cart2Sph(x,y,z):
+    XsqPlusYsq = x**2 + y**2
+    r = math.sqrt(XsqPlusYsq + z**2)				# r
+    elev = math.atan2(z,math.sqrt(XsqPlusYsq))		# theta
+    az = math.atan2(y,x)							# phi
+    return r, elev, az
+
+def sph2cart(r,elevation,azimuth):
+    x = r * np.cos(elevation) * np.cos(azimuth)
+    y = r * np.cos(elevation) * np.sin(azimuth)
+    z = r * np.sin(elevation)
+    return x, y, z
+
+#def cartesianToSpherical_np(xyz):
 #
-#def appendSpherical_np(xyz):
-#	ptsnew = np.hstack((xyz, np.zeros(xyz.shape)))
+#	ptsnew = np.hstack((xyz, np.zeros(xyz.shape))) #creates ptsnew in "shape" format
 #	xy = xyz[:,0]**2 + xyz[:,1]**2
 #	ptsnew[:,3] = np.sqrt(xy + xyz[:,2]**2)
 #	ptsnew[:,4] = np.arctan2(np.sqrt(xy), xyz[:,2]) # for elevation angle defined from Z-axis down
 #	#ptsnew[:,4] = np.arctan2(xyz[:,2], np.sqrt(xy)) # for elevation angle defined from XY-plane up
 #	ptsnew[:,5] = np.arctan2(xyz[:,1], xyz[:,0])
 #	return ptsnew
-#
 
 
 baseUnit = {
@@ -43,23 +54,29 @@ timestr = time.strftime("%Y%m%d-%H%M%S")
 
 log10FileName = 'output/positions-{}-log10.csv'.format(timestr)
 linearFileName = 'output/positions-{}-linear.csv'.format(timestr)
+sphericalFileName = 'output/positions-{}-spherical.csv'.format(timestr)
 
 try:	
-	with open(os.path.join(dir, "..","..","datalogs","bla20180115bb.CSV"), newline='') as in_csvfile, \
+	with open(os.path.join(dir, "..","..","datalogs","20180115-16h57m.CSV"), newline='') as in_csvfile, \
 		 open(log10FileName, 'w') as log10_out_csvfile, \
-		 open(linearFileName.format(timestr), 'w') as linear_out_csvfile:
+		 open(linearFileName.format(timestr), 'w') as linear_out_csvfile, \
+		 open(sphericalFileName.format(timestr), 'w') as spherical_out_csvfile:
 		
 		# columns for output CSV file
 		fieldnames = ['posX', 'posY', 'posZ']
+
+		spherical_fieldnames = ['posX', 'posY', 'posZ']
 	
 		# initialize writer
 		log10_posData = csv.DictWriter(log10_out_csvfile, fieldnames=fieldnames)
 		linear_posData = csv.DictWriter(linear_out_csvfile, fieldnames=fieldnames)
+		spherical_posData = csv.DictWriter(spherical_out_csvfile, fieldnames=spherical_fieldnames)
 	
 		# write column names to output CSV file
 		if writeOutCSVHeader:
 			log10_posData.writeheader()
 			linear_posData.writeheader()
+			spherical_posData.writeheader()
 
 		# read rows into a dictionary format
 		IMUData = csv.DictReader(in_csvfile) 
@@ -81,6 +98,8 @@ try:
 		previousAccX, previousAccY, previousAccZ = 0, 0, 0
 		logPosX, logPosY, logPosZ = 0, 0, 0
 	
+		radius, elevation, azimuth = 0, 0, 0
+
 		previousTimestamp = 0
 		dataPointCt = 0
 	
@@ -125,8 +144,16 @@ try:
 			# add a read datapoint to counter
 			dataPointCt += 1
 			
-			#print('posX: %.6f,\tposY: %.6f,\tposZ: %.6f,\tdT: %.4f' % (posX, posY, posZ, deltaT))
-			print(".", end="")
+			print('posX: %.6f,\tposY: %.6f,\tposZ: %.6f,\tdT: %.4f' % (posX, posY, posZ, deltaT))
+			#print(".", end="")
+
+
+			
+			radius, elevation, azimuth = cart2Sph(posX, posY, posZ)
+
+			radius = math.log10(abs(radius/baseUnit[baseUnitToUse]))
+
+			sphPosX, sphPosY, sphPosZ = sph2cart(radius, elevation, azimuth)
 
 			# create new vars to manipulate as logs
 			logPosX = posX
@@ -170,7 +197,7 @@ try:
 				logPosZ = math.log10(abs(logPosZ/baseUnit[baseUnitToUse])) * (-1)
 			else:
 				logPosZ = math.log10(abs(logPosZ/baseUnit[baseUnitToUse]))
-	
+
 
 			# write datapoints do file until u have 10k points, then break out of loop
 			if dataPointCt < 10000:
@@ -185,6 +212,11 @@ try:
 					'posX': '%0.6f' % posX,
 					'posY': '%0.6f' % posY,
 					'posZ': '%0.6f' % posZ
+					})
+				spherical_posData.writerow({
+					'posX': '%0.6f' % sphPosX,
+					'posY': '%0.6f' % sphPosY,
+					'posZ': '%0.6f' % sphPosZ
 					})
 	
 			else:
@@ -214,7 +246,9 @@ try:
 	print('\tAverage speed:\t\t %.2f m/s' % avgVelZ)
 	print('\tElapsed distance:\t %.2f m\n' % distZ)
 	
-except:
+except Exception as e:
+	print("\n\n")
+	print(e)
 	print("Some error occurred...")
 	# deletes empty files if any where created
 	if os.stat(log10FileName).st_size == 0:
