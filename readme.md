@@ -44,9 +44,8 @@ Can __random acceleration__ data generate interesting shapes?
 Validation:
 Can **real noise from acceleration data** generate interesting shapes?
 
-	 - Hardware/Firmware/Mechanical development
-	 - Import real data
-	 - Export positions into 3D Space from CSV (Rhino)
+	 - Import real data (after Hardware/Firmware/Mechanical development)
+	 - Export positions into 3D Space from CSV (into Rhino and Web visualizations)
 	 - Heavy skew into Vertical Axis
 	 	(I speculate that it is because its the axis that is suffering constant 1g
 	 	and therefore drifting much more)
@@ -57,7 +56,7 @@ Can **real noise from acceleration data** generate interesting shapes?
 	 - Next issue: 
 	 	It generates interesting shapes but unrecognizable in a linear scale.
 	 	The overal shape is almost a straight line, and there are interesting
-	 	movements zooming in 1000 times, 1000000 times.
+	 	movements zooming in 1000x and other different ones zooming in 1000000x.
 	 	All cannot be seen at the same time.
 		Is it possible to conciliate these different scales?
 
@@ -76,11 +75,16 @@ Can **log-log graphs** make the interesting shapes in different scales all visib
 	 - XYZ Acceleration noise data is imported into python
 	 - XYZ Acceleration is integrated into XYZ speed
 	 - XYZ Speed is integrated into XYZ positions
-	 - XYZ positions are converted into Spherical positions
+	 - XYZ positions are converted into Spherical coordinates
 	 - Radius from spherical coordinates are changed into log scale
 	 - Log Spherical positions are transformed into XYZ positions
 	 - A CSV point cloud is exported
 
+#### Python next steps:
+	 - Automate the division of a large dataset into smaller CSVs, i.e.:
+	 	Import 1 million data points and generate 100 Shapes with 10k points each.
+	 - Bypass the SD card and receive the acceleration readings directly from MCU
+	 - Output directly into GH instead of into a CSV. (or automate the importation of CSVs in GH)
 
 ### FIRMWARE
 
@@ -97,16 +101,23 @@ Data is then logged into an SD card.
 	 	A rolling average is subtracted from the current sample value.
 	 	Previous implementation consisted of single calibration during boot.
 	
+#### Firmware next steps:
+	 - Send data directly to a computer instead of to SD Card
+	 - Maybe integrating the data and do log conversion on the MCU?
+	 	MCU still has headroom, but its nice to have the raw data on the PC
 
 
 ### GRASSHOPPER + PRC (parametric robot control)
 
 	 - Importing of point cloud data into SimplePath.GH example
-	 - Modification of SimplePath example to
-	 - 
-	 - 
-	 -
-	 - 
+	 - Modification of SimplePath example:
+	 	CurveThroughPt on PointCloud
+	 	Rotate the curve parametricaly
+	 	Divide the curve into N parts
+	 	Create a plane in the ends of the parts, oriented towards points we choose.
+	 	Import custom geometry to use as tool
+	 	Weave Kuka Robot Language Output manipualtion into Linear Movements 
+	 		(trigger Lights and Camera after moving, wait for the photo to be taken and continue)
 
 
 ### PCB HOLDERS
@@ -125,6 +136,8 @@ Data is then logged into an SD card.
 	 - Holder with LED extension directly into X axis
 	 	("extension" perpendicular to flange axis, turned out to be too agressive)
 	 - Holder with LED extension 45 degress in relation to X and Z axis 
+	 - Soldering of the LEDs, drilling a ping pong ball as diffuser, do some thermal testing:
+	 	LEDs and current limiting resistors aren't large enough for 100% duty cycle, but enough for pulsing.
 
 
 
