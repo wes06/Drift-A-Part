@@ -2,9 +2,9 @@
 # Drift a part
 
 
-### DEVELOPMENT STEPS
+#### Development Steps
 
-### Python (data modification):
+### PYTHON (data modification):
 
 Validation:
 Can __random acceleration__ data generate interesting shapes?
@@ -72,11 +72,27 @@ Can **log-log graphs** make the interesting shapes in different scales all visib
 	 - A CSV point cloud is exported
 
 
-### Firmware:
+### FIRMWARE
+
+Teensy + MPU 9250 via Interrupt Driven SPI (an interval is configured during setup), so the IMU tells the MCU when to call for data.
+Data is then logged into an SD card.
 
 	 - Testing IMU via Interrupt driven SPI to Serial Port
-	 - Testing IMU via Interrupt driven SPI to Serial Port and SD Card
+	 - Testing IMU via Interrupt driven SPI to Serial Port and SD Card (which also uses SPI)
+	 - Inclusion of OLED screen to show # of samples taken
+	 - Inclusion of capacitive button to pause sample gathering
+	 	In case the datalogger is about to be moved
 	 - Testing dataset
 	 - Implementing gravity "High Pass" filter
+	 	A rolling average is subtracted from the current sample value.
+	 	Previous implementation consisted of single calibration during boot.
 	
-	Minor corrections such as data format, header, sample intervals, etc not included.
+
+
+### GRASSHOPPER + PRC (parametric root control)
+
+	 - Importing of point cloud data into SimplePath.GH example
+	 - Modification of SimplePath example to 
+
+
+	 
