@@ -89,10 +89,25 @@ Data is then logged into an SD card.
 	
 
 
-### GRASSHOPPER + PRC (parametric root control)
+### GRASSHOPPER + PRC (parametric robot control)
 
 	 - Importing of point cloud data into SimplePath.GH example
-	 - Modification of SimplePath example to 
+	 - Modification of SimplePath example to
+	 -
+	 -
+	 -
+	 - 
 
 
-	 
+### PCB HOLDERS
+
+	 - Teensy + MPU
+	 - Teensy + MPU + OLED + Capacitive button
+
+### LED HOLDERS
+
+	 - STL with mock dimensions to test mesh import into Grasshopper
+	 	(i.e.: "extension" parallel to flange axis, thus wasting one axis :( )
+	 - Holder with LED extension directly into X axis
+	 	(i.e.: "extension" perpendicular to flange axis, turned out to be too agressive)
+	 - Holder with LED extension 45 degress in relation to X and Z axis 
