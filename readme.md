@@ -119,3 +119,9 @@ Data is then logged into an SD card.
 	 - Holder with LED extension directly into X axis
 	 	("extension" perpendicular to flange axis, turned out to be too agressive)
 	 - Holder with LED extension 45 degress in relation to X and Z axis 
+
+
+
+
+
+## Next Steps (as of 29 Jan 2018)
