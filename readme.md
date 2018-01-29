@@ -2,9 +2,9 @@
 # Drift a part
 
 
+## Steps
 
-
-#Python:
+### Python:
 
 	Validation:
 	(as in, can random acceleration data generate interesting shapes? If yes, continue)
@@ -51,7 +51,7 @@
 	
 
 
-#Firmware:
+### Firmware:
 
 	 - Testing IMU via Interrupt driven SPI to Serial Port
 	 - Testing IMU via Interrupt driven SPI to Serial Port and SD Card
