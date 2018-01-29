@@ -7,7 +7,7 @@
 ### Python:
 
 	Validation:
-	(as in, can random acceleration data generate interesting shapes? If yes, continue)
+	(can **random acceleration** data generate interesting shapes? If yes, continue)
 		 - Script to generate mock data with predictable/calculatable results 
 		 	(i.e.: 
 		 		AccelX: 10m/sˆ2
@@ -30,7 +30,7 @@
 
 
 	Validation:
-	(can real noise from acceleration data generate interesting shapes? If yes, continue)
+	(can **real noise from acceleration data** generate interesting shapes? If yes, continue)
 		 - Hardware/Firmware/Mechanical development
 		 - Import real data
 		 - Export positions into 3D Space from CSV (Rhino)
@@ -48,6 +48,8 @@
 
 	
 	Validation:
+	Using **log-log graphs as a reference**, transform the data in 3D space.
+		 - 
 	
 
 
