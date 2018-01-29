@@ -2,7 +2,11 @@
 # Drift a part
 
 
-#### Development Steps
+## Abstract
+
+## Inspiration
+
+## Development Steps
 
 ### PYTHON (data modification):
 
@@ -110,8 +114,8 @@ Data is then logged into an SD card.
 
 3D printed + carbon fiber parts for the LED extension for the Kuka Robot
 
-	 - STL with mock dimensions to test mesh import into Grasshopper
-	 	(i.e.: "extension" parallel to flange axis, thus wasting one axis :( )
+	 - STL with mock dimensions to test mesh import as tool into Grasshopper/PRC
+	 	("extension" parallel to flange axis, thus wasting one axis :( )
 	 - Holder with LED extension directly into X axis
-	 	(i.e.: "extension" perpendicular to flange axis, turned out to be too agressive)
+	 	("extension" perpendicular to flange axis, turned out to be too agressive)
 	 - Holder with LED extension 45 degress in relation to X and Z axis 
