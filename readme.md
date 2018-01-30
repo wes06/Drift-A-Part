@@ -15,9 +15,17 @@ By leaving only noise and integrating the noise into speed, and then into distan
 
 ## References
 
+**Dead Reckoning**
+
+	In navigation, dead reckoning is the process of calculating one's current position by using a previously determined position, and advancing that position based upon known or estimated speeds over elapsed time and course. Dead reckoning is subject to cumulative errors. 
+
+(<a href="https://en.wikipedia.org/wiki/Dead_reckoning" target="_blank">Wikipedia</a>). 
+
 **Reckoning**
+
 	1. the action or process of calculating or estimating something.
 	2. the avenging or punishing of past mistakes or misdeeds.
+
 
 
 Light Painting
