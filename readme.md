@@ -34,7 +34,7 @@ Painting with one or multiple long exposure photographies, overlapping and compo
 
 <p align="left" style="float: left;">
 	<img src="Imgs/lp1.png" height="150"/>
-  <img src="Imgs/lp2" height="150"/>
+  <img src="Imgs/lp2.png" height="150"/>
 </p>
 
 **Architecture Photography**
