@@ -13,7 +13,7 @@ Exploration of the difference between the real and the virtual (assumed) positio
 By leaving only noise and integrating the noise into speed, and then into distance (as would be done with real “valuable” data), we can visualize how much we would believe the part traveled without proper “information maintenance”. This concept not only relates to sensors, but also to how we can erroneously or distortedly assess informations about people, the world, relationships. As we cannot integrate the error or an assessment of a person over time, we are left to use sensors as metaphors.
 
 
-## References
+## Main References
 
 **Dead Reckoning**
 
@@ -30,10 +30,12 @@ By leaving only noise and integrating the noise into speed, and then into distan
 
 **Light Painting**
 
->Painting with one or multiple long exposure photographies, overlapping and composing a single image using multiple cuts and slices of light in time and space.
+Painting with one or multiple long exposure photographies, overlapping and composing a single image using multiple cuts and slices of light in time and space.
 
 
 **Architecture Photography**
+
+The fact that the subject is still and you can use time to cheat when generating images. i.e.: taking photos of multiple configurations of lights/furnitures and redoing that in post production.
 
 **Vertigo**
 
@@ -122,6 +124,13 @@ Can **log-log graphs** make the interesting shapes in different scales all visib
 	<img src="Imgs/integrationTesting.png" height="250"/>
   <img src="Imgs/integration3axis.png" height="250"/>
   <img src="Imgs/dataset.png" height="250"/>
+</p>
+
+<p align="left" style="float: left;">
+	<img src="Imgs/scale0.0001.png" height="250"/>
+  <img src="Imgs/scale1.png" height="250"/>
+  <img src="Imgs/scale1000.png" height="250"/>
+  <img src="Imgs/scale1000000.png" height="250"/>
 </p>
 
 ### FIRMWARE
