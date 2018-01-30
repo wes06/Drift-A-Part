@@ -128,13 +128,13 @@ Can **log-log graphs** make the interesting shapes in different scales all visib
 
 <p align="left" style="float: none;">
 	If this is roughly 1x scale<br>
-	<img src="Imgs/scale0.0001.png" height="250"/>
+	<img src="Imgs/scale0.0001.png" height="250"/><br>
 	This would be roughly 1000x<br>
-  <img src="Imgs/scale1.png" height="250"/>
+  <img src="Imgs/scale1.png" height="250"/><br>
   This 1000000x<br>
-  <img src="Imgs/scale1000.png" height="250"/>
+  <img src="Imgs/scale1000.png" height="250"/><br>
   And this 1000000000x<br>
-  <img src="Imgs/scale1000000.png" height="250"/>
+  <img src="Imgs/scale1000000.png" height="250"/><br>
   Green is "linear", Blue is log conversion using cartesian coordinates, purple with spherical
 </p>
 
