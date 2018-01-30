@@ -19,7 +19,15 @@ By leaving only noise and integrating the noise into speed, and then into distan
 
 >In navigation, dead reckoning is the process of calculating one's current position by using a previously determined position, and advancing that position based upon known or estimated speeds over elapsed time and course. Dead reckoning is subject to cumulative errors. 
 
-(<a href="https://en.wikipedia.org/wiki/Dead_reckoning" target="_blank">Wikipedia</a>). 
+<p align="left" style="float: left;">
+	<img src="Imgs/bbb_exp3.png" height="150"/>
+  <img src="Imgs/pathIntegration.png" height="150"/>
+</p>
+
+(<a href="https://en.wikipedia.org/wiki/Path_integration" target="_blank">Wikipedia</a> on Path Integration). 
+(<a href="https://en.wikipedia.org/wiki/Dead_reckoning" target="_blank">Wikipedia</a>) on Dead Reckoning. 
+(<a href="https://locatelab.org/" target="_blank">Locate Lab</a>).
+
 
 **Reckoning**
 
@@ -28,18 +36,21 @@ By leaving only noise and integrating the noise into speed, and then into distan
 
 
 
-**Light Painting**
+**Light Painting** / **Architecture Photography**
 
 Painting with one or multiple long exposure photographies, overlapping and composing a single image using multiple cuts and slices of light in time and space.
+
+The fact that the subject is still and you can use time to cheat when generating images. i.e.: taking photos of multiple configurations of lights/furnitures and redoing that in post production.
 
 <p align="left" style="float: left;">
 	<img src="Imgs/lp1.png" height="150"/>
   <img src="Imgs/lp2.png" height="150"/>
+  <img src="Imgs/luzesnatal.png" height="150"/>
 </p>
 
-**Architecture Photography**
 
-The fact that the subject is still and you can use time to cheat when generating images. i.e.: taking photos of multiple configurations of lights/furnitures and redoing that in post production.
+
+
 
 **Vertigo**
 
