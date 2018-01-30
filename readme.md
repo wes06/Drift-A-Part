@@ -151,4 +151,6 @@ STLs can be interactively viewed <a href="https://github.com/wes06/Drift-A-Part/
 
 <script src="https://embed.github.com/view/3d/wes06/Drift-A-Part/master/Mechanical%20Parts/Kuka%20Lights/LED%20Holder%20-%20Inclinado.STL"></script>
 
+<script src="https://embed.github.com/view/3d/skalnik/secret-bear-clip/master/stl/clip.stl"></script>
+
 ## Next Steps (as of 29th Jan 2018)
