@@ -28,18 +28,21 @@ By leaving only noise and integrating the noise into speed, and then into distan
 
 
 
-*Light Painting*
+**Light Painting**
 
 >Painting with one or multiple long exposure photographies, overlapping and composing a single image using multiple cuts and slices of light in time and space.
 
 
-*Architecture Photography*
+**Architecture Photography**
 
-*Vertigo*
+**Vertigo**
 
-*Memento*
+**Memento**
 
-*Powers of Ten*
+**Powers of Ten**
+
+(<a href="https://www.youtube.com/watch?v=0fKBhvDjuy0" target="_blank">Youtube</a>). 
+
 
 ## Development Steps
 
@@ -116,9 +119,9 @@ Can **log-log graphs** make the interesting shapes in different scales all visib
 	 - Output directly into GH instead of into a CSV. (or automate the importation of CSVs in GH)
 
 <p align="left" style="float: left;">
-	<img src="Imgs/integrationTesting.png" height="300"/>
-  <img src="Imgs/integration3axis.png" height="300"/>
-  <img src="Imgs/dataset.png" height="300"/>
+	<img src="Imgs/integrationTesting.png" height="250"/>
+  <img src="Imgs/integration3axis.png" height="250"/>
+  <img src="Imgs/dataset.png" height="250"/>
 </p>
 
 ### FIRMWARE
