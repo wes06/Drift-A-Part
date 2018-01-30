@@ -148,9 +148,11 @@ STLs can be interactively viewed <a href="https://github.com/wes06/Drift-A-Part/
 	 - Holder with LED extension 45 degress in relation to X and Z axis 
 	 - Soldering of the LEDs, drilling a ping pong ball as diffuser, do some thermal testing:
 	 	LEDs and current limiting resistors aren't large enough for 100% duty cycle, but enough for pulsing.
+<p align="center" style="float: left;">
+  <img src="Imgs/LED extender.png" height="300"/>
+  <img src="Imgs/LED extender 2.png" height="300"/>
+</p>
 
-<script src="https://embed.github.com/view/3d/wes06/Drift-A-Part/master/Mechanical%20Parts/Kuka%20Lights/LED%20Holder%20-%20Inclinado.STL"></script>
 
-<script src="https://embed.github.com/view/3d/skalnik/secret-bear-clip/master/stl/clip.stl"></script>
 
 ## Next Steps (as of 29th Jan 2018)
