@@ -12,6 +12,17 @@ Exploration of the difference between the real and the virtual (assumed) positio
 
 By leaving only noise and integrating the noise into speed, and then into distance (as would be done with real “valuable” data), we can visualize how much we would believe the part traveled without proper “information maintenance”. This concept not only relates to sensors, but also to how we can erroneously or distortedly assess informations about people, the world, relationships. As we cannot integrate the error or an assessment of a person over time, we are left to use sensors as metaphors.
 
+
+## References
+
+Light Painting
+
+Architecture Photography
+
+Vertigo
+
+Memento/Interstellar
+
 ## Development Steps
 
 ### PYTHON (data modification):
@@ -87,9 +98,9 @@ Can **log-log graphs** make the interesting shapes in different scales all visib
 	 - Output directly into GH instead of into a CSV. (or automate the importation of CSVs in GH)
 
 <p align="left" style="float: left;">
-	<img src="Imgs/integrationTesting.png.png" height="300"/>
+	<img src="Imgs/integrationTesting.png" height="300"/>
   <img src="Imgs/integration3axis.png" height="300"/>
-  <img src="Imgs/dataset.png.png" height="300"/>
+  <img src="Imgs/dataset.png" height="300"/>
 </p>
 
 ### FIRMWARE
