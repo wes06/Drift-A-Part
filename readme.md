@@ -128,7 +128,6 @@ Can **log-log graphs** make the interesting shapes in different scales all visib
 
 <p align="left" style="float: none;">
 	If this is roughly 1x scale<br>
-
 	<img src="Imgs/scale0.0001.png" height="250"/>
 	This would be roughly 1000x<br>
   <img src="Imgs/scale1.png" height="250"/>
