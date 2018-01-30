@@ -126,10 +126,11 @@ Data is then logged into an SD card.
 
 	 - Teensy + MPU
 	 - Teensy + MPU + OLED + Capacitive button
+<p align="center" style="float: left;">
+  <img src="Imgs/_DSC6531.jpg" width="350"/>
+  <img src="Imgs/_DSC6554.jpg" width="350"/>
+</p>
 
-
-![Alt text](Imgs/_DSC5131.jpg?raw=true "Title")
-![Alt text](Imgs/_DSC6554.jpg?raw=true "Title")
 
 ### LED HOLDERS
 
