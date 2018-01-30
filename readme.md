@@ -28,13 +28,18 @@ By leaving only noise and integrating the noise into speed, and then into distan
 
 
 
-Light Painting
+*Light Painting*
 
-Architecture Photography
+>Painting with one or multiple long exposure photographies, overlapping and composing a single image using multiple cuts and slices of light in time and space.
 
-Vertigo
 
-Memento/Interstellar
+*Architecture Photography*
+
+*Vertigo*
+
+*Memento*
+
+*Powers of Ten*
 
 ## Development Steps
 
