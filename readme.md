@@ -15,6 +15,11 @@ By leaving only noise and integrating the noise into speed, and then into distan
 
 ## References
 
+**Reckoning**
+	1. the action or process of calculating or estimating something.
+	2. the avenging or punishing of past mistakes or misdeeds.
+
+
 Light Painting
 
 Architecture Photography
