@@ -123,7 +123,6 @@ Can **log-log graphs** make the interesting shapes in different scales all visib
 <p align="left" style="float: left;">
 	<img src="Imgs/integrationTesting.png" height="250"/>
   <img src="Imgs/integration3axis.png" height="250"/>
-  <img src="Imgs/dataset.png" height="250"/>
 </p>
 
 <p align="left" style="float: none;">
@@ -135,7 +134,8 @@ Can **log-log graphs** make the interesting shapes in different scales all visib
   <img src="Imgs/scale3.png" height="250"/><br>
   This 1/1000000000x<br>
   <img src="Imgs/scale4.png" height="250"/><br>
-  Green is "linear", Blue is log conversion using cartesian coordinates, purple with spherical
+  Green is "linear", Blue is log conversion using cartesian coordinates, purple with spherical.<br>
+  Note the perpendicular distortion on the Blue graph.
 </p>
 
 
