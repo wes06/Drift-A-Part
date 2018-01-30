@@ -87,7 +87,9 @@ Can **log-log graphs** make the interesting shapes in different scales all visib
 	 - Output directly into GH instead of into a CSV. (or automate the importation of CSVs in GH)
 
 <p align="left" style="float: left;">
+	<img src="Imgs/integrationTesting.png.png" height="300"/>
   <img src="Imgs/integration3axis.png" height="300"/>
+  <img src="Imgs/dataset.png.png" height="300"/>
 </p>
 
 ### FIRMWARE
