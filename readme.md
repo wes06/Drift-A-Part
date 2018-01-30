@@ -127,6 +127,10 @@ Data is then logged into an SD card.
 	 - Teensy + MPU
 	 - Teensy + MPU + OLED + Capacitive button
 
+
+![Alt text](Imgs/_DSC5131.jpg?raw=true "Title")
+![Alt text](Imgs/_DSC6554.jpg?raw=true "Title")
+
 ### LED HOLDERS
 
 3D printed + carbon fiber parts for the LED extension for the Kuka Robot
