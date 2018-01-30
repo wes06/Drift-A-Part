@@ -32,6 +32,10 @@ By leaving only noise and integrating the noise into speed, and then into distan
 
 Painting with one or multiple long exposure photographies, overlapping and composing a single image using multiple cuts and slices of light in time and space.
 
+<p align="left" style="float: left;">
+	<img src="Imgs/lp1.png" height="150"/>
+  <img src="Imgs/lp2" height="150"/>
+</p>
 
 **Architecture Photography**
 
@@ -58,6 +62,12 @@ The fact that the subject is still and you can use time to cheat when generating
 
 
 **Powers of Ten**
+
+<p align="left" style="float: left;">
+	<img src="Imgs/powersoften-3.png" height="200"/>
+  <img src="Imgs/powersoften0.png" height="200"/>
+  <img src="Imgs/powersoften8.png" height="200"/>
+</p>
 
 (<a href="https://www.youtube.com/watch?v=0fKBhvDjuy0" target="_blank">Youtube</a>). 
 
