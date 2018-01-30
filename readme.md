@@ -24,9 +24,9 @@ By leaving only noise and integrating the noise into speed, and then into distan
   <img src="Imgs/pathIntegration.png" height="150"/>
 </p>
 
-(<a href="https://en.wikipedia.org/wiki/Path_integration" target="_blank">Wikipedia</a> on Path Integration). 
-(<a href="https://en.wikipedia.org/wiki/Dead_reckoning" target="_blank">Wikipedia</a>) on Dead Reckoning. 
-(<a href="https://locatelab.org/" target="_blank">Locate Lab</a>).
+<a href="https://en.wikipedia.org/wiki/Path_integration" target="_blank">Wikipedia</a> on Path Integration. <br>
+<a href="https://en.wikipedia.org/wiki/Dead_reckoning" target="_blank">Wikipedia</a> on Dead Reckoning. 
+<a href="https://locatelab.org/" target="_blank">Locate Lab</a>.
 
 
 **Reckoning**
@@ -60,7 +60,7 @@ The fact that the subject is still and you can use time to cheat when generating
 </p>
 
 
-(<a href="http://www.imdb.com/title/tt0052357/" target="_blank">IMDb</a>). 
+Source: <a href="http://www.imdb.com/title/tt0052357/" target="_blank">IMDb</a>. 
 
 **Memento**
 
@@ -69,7 +69,7 @@ The fact that the subject is still and you can use time to cheat when generating
   <img src="Imgs/memento_timeline.png" height="200"/>
 </p>
 
-(<a href="https://www.youtube.com/watch?v=67e_jl4flpE" target="_blank">Youtube</a>). 
+Source: <a href="https://www.youtube.com/watch?v=67e_jl4flpE" target="_blank">Youtube</a>. 
 
 
 **Powers of Ten**
@@ -80,7 +80,7 @@ The fact that the subject is still and you can use time to cheat when generating
   <img src="Imgs/powersoften8.png" height="200"/>
 </p>
 
-(<a href="https://www.youtube.com/watch?v=0fKBhvDjuy0" target="_blank">Youtube</a>). 
+Source: <a href="https://www.youtube.com/watch?v=0fKBhvDjuy0" target="_blank">Youtube</a>. 
 
 
 ## Development Steps
