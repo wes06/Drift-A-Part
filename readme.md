@@ -86,7 +86,7 @@ Can **log-log graphs** make the interesting shapes in different scales all visib
 	 - Bypass the SD card and receive the acceleration readings directly from MCU
 	 - Output directly into GH instead of into a CSV. (or automate the importation of CSVs in GH)
 
-<p align="center" style="float: left;">
+<p align="left" style="float: left;">
   <img src="Imgs/integration3axis.png" height="300"/>
 </p>
 
@@ -111,8 +111,8 @@ Data is then logged into an SD card.
 	 - Maybe integrating the data and do log conversion on the MCU?
 	 	MCU still has headroom, but its nice to have the raw data on the PC
 
-<p align="center" style="float: left;">
-  <img src="Imgs/Interrupt SPI SD.png.png" height="300"/>
+<p align="left" style="float: left;">
+  <img src="Imgs/Interrupt SPI SD.png" height="300"/>
 </p>
 
 ### GRASSHOPPER + PRC (parametric robot control)
@@ -127,7 +127,7 @@ Data is then logged into an SD card.
 	 	Weave Kuka Robot Language Output manipualtion into Linear Movements 
 	 		(trigger Lights and Camera after moving, wait for the photo to be taken and continue)
 
-<p align="center" style="float: left;">
+<p align="left" style="float: left;">
   <img src="Imgs/Rhino PRC.png" height="300"/>
 </p>
 
@@ -140,7 +140,7 @@ Data is then logged into an SD card.
 
 
 
-<p align="center" style="float: left;">
+<p align="left" style="float: left;">
   <img src="Imgs/_DSC6531.jpg" height="300"/>
   <img src="Imgs/_DSC6554.jpg" height="300"/>
 </p>
@@ -159,7 +159,7 @@ STLs can be interactively viewed <a href="https://github.com/wes06/Drift-A-Part/
 	 - Holder with LED extension 45 degress in relation to X and Z axis 
 	 - Soldering of the LEDs, drilling a ping pong ball as diffuser, do some thermal testing:
 	 	LEDs and current limiting resistors aren't large enough for 100% duty cycle, but enough for pulsing.
-<p align="center" style="float: left;">
+<p align="left" style="float: left;">
   <img src="Imgs/LED extender.png" height="300"/>
   <img src="Imgs/LED extender 2.png" height="300"/>
 </p>
