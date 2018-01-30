@@ -149,6 +149,7 @@ STLs can be interactively viewed <a href="https://github.com/wes06/Drift-A-Part/
 	 - Soldering of the LEDs, drilling a ping pong ball as diffuser, do some thermal testing:
 	 	LEDs and current limiting resistors aren't large enough for 100% duty cycle, but enough for pulsing.
 
-
+<script src="https://embed.github.com/view/3d/wes06/Drift-A-Part/master/Mechanical%20Parts/Kuka%20Lights/LED%20Holder%20-%20Inclinado.STL"></script>
+https://github.com/wes06/Drift-A-Part/blob/master/Mechanical%20Parts/Kuka%20Lights/LED%20Holder%20-%20Inclinado.STL
 
 ## Next Steps (as of 29th Jan 2018)
