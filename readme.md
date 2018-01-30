@@ -164,6 +164,9 @@ STLs can be interactively viewed <a href="https://github.com/wes06/Drift-A-Part/
   <img src="Imgs/LED extender 2.png" height="300"/>
 </p>
 
+STLs can be interactively viewed <a href="https://render.githubusercontent.com/view/solid?url=https://raw.githubusercontent.com/wes06/Drift-A-Part/master/Mechanical%20Parts/Kuka%20Lights/LED%20Holder%20-%20Inclinado.STL" target="_blank">here</a>.
+
+
 
 
 ## Next Steps (as of 29th Jan 2018)
