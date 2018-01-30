@@ -39,7 +39,23 @@ The fact that the subject is still and you can use time to cheat when generating
 
 **Vertigo**
 
+<p align="left" style="float: left;">
+	<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTNjYjUzNTUtYWI0OS00MzFmLWIyZTgtMjE2Mjc0MmE5Mzc0XkEyXkFqcGdeQXVyNjkxMjM5Nzc@._V1_.jpg" height="150"/>
+  <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjQ1ODcyMjg5M15BMl5BanBnXkFtZTgwNjkyNjQyMTI@._V1_SY1000_CR0,0,634,1000_AL_.jpg" height="250"/>
+</p>
+
+
+(<a href="http://www.imdb.com/title/tt0052357/" target="_blank">IMDb</a>). 
+
 **Memento**
+
+<p align="left" style="float: left;">
+	<img src="Imgs/memento_nolan.png" height="250"/>
+  <img src="Imgs/memento_timeline.png" height="250"/>
+</p>
+
+(<a href="https://www.youtube.com/watch?v=67e_jl4flpE" target="_blank">Youtube</a>). 
+
 
 **Powers of Ten**
 
