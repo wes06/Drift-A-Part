@@ -86,6 +86,10 @@ Can **log-log graphs** make the interesting shapes in different scales all visib
 	 - Bypass the SD card and receive the acceleration readings directly from MCU
 	 - Output directly into GH instead of into a CSV. (or automate the importation of CSVs in GH)
 
+<p align="center" style="float: left;">
+  <img src="Imgs/integration3axis.png" height="300"/>
+</p>
+
 ### FIRMWARE
 
 Teensy + MPU 9250 via Interrupt Driven SPI (an interval is configured during setup), so the IMU tells the MCU when to call for data.
@@ -101,11 +105,15 @@ Data is then logged into an SD card.
 	 	A rolling average is subtracted from the current sample value.
 	 	Previous implementation consisted of single calibration during boot.
 	
+
 #### Firmware next steps:
 	 - Send data directly to a computer instead of to SD Card
 	 - Maybe integrating the data and do log conversion on the MCU?
 	 	MCU still has headroom, but its nice to have the raw data on the PC
 
+<p align="center" style="float: left;">
+  <img src="Imgs/Interrupt SPI SD.png.png" height="300"/>
+</p>
 
 ### GRASSHOPPER + PRC (parametric robot control)
 
@@ -119,6 +127,9 @@ Data is then logged into an SD card.
 	 	Weave Kuka Robot Language Output manipualtion into Linear Movements 
 	 		(trigger Lights and Camera after moving, wait for the photo to be taken and continue)
 
+<p align="center" style="float: left;">
+  <img src="Imgs/Rhino PRC.png" height="300"/>
+</p>
 
 ### PCB HOLDERS
 
