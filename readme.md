@@ -35,7 +35,7 @@ By leaving only noise and integrating the noise into speed, and then into distan
 >1. the action or process of calculating or estimating something.
 >2. the avenging or punishing of past mistakes or misdeeds.
 
-** One-electron Universe **
+**One-electron Universe**
 
 
 <a href="https://en.wikipedia.org/wiki/One-electron_universe" target="_blank">Wikipedia</a> on One-electron Universe. <br>
