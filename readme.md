@@ -11,7 +11,7 @@
 
 Exploration of the difference between the real and the virtual (assumed) positions of a thing due to noise in data assessment. This exploration was born from the desire to work with a part of data which we struggle a lot to get rid of: noise. During this constant struggle and maintenance, we do not necessarily realize how much noise we are removing. 
 
-By leaving only noise and integrating the noise into speed, and then into distance (as would be done with real “valuable” data), we can visualize how much we would believe the part traveled without proper “information maintenance”. This concept not only relates to sensors, but also to how we can erroneously or distortedly assess informations about people, the world, relationships. As we cannot integrate the error or an assessment of a person over time, we are left to use sensors as metaphors.
+By leaving only noise and integrating the noise into speed, and then into distance (as would be done with real “valuable” data), we can visualize how much we would believe the part traveled without proper “information maintenance”. This concept not only relates to sensors, but also to how we can erroneously or distortedly assess informations about people, the world, relationships. As we cannot integrate the error of an assessment of a person over time, we are left to use sensors as metaphors.
 
 
 ## Main References
@@ -26,7 +26,7 @@ By leaving only noise and integrating the noise into speed, and then into distan
 </p>
 
 <a href="https://en.wikipedia.org/wiki/Path_integration" target="_blank">Wikipedia</a> on Path Integration. <br>
-<a href="https://en.wikipedia.org/wiki/Dead_reckoning" target="_blank">Wikipedia</a> on Dead Reckoning. 
+<a href="https://en.wikipedia.org/wiki/Dead_reckoning" target="_blank">Wikipedia</a> on Dead Reckoning. <br>
 <a href="https://locatelab.org/" target="_blank">Locate Lab</a>.
 
 
@@ -34,6 +34,11 @@ By leaving only noise and integrating the noise into speed, and then into distan
 
 >1. the action or process of calculating or estimating something.
 >2. the avenging or punishing of past mistakes or misdeeds.
+
+** One-electron Universe **
+
+
+<a href="https://en.wikipedia.org/wiki/One-electron_universe" target="_blank">Wikipedia</a> on One-electron Universe. <br>
 
 
 
