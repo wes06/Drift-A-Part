@@ -9,9 +9,19 @@
 
 ## Inspiration
 
-Exploration of the difference between the real and the virtual (assumed) positions of a thing due to noise in data assessment. This exploration was born from the desire to work with a part of data which we struggle a lot to get rid of: noise. During this constant struggle and maintenance, we do not necessarily realize how much noise we are removing. 
+Exploration of the difference between the real and the virtual (assumed) positions/characteristics of a thing due to noise in data assessment. This exploration was born from the desire to work with a part of data which we struggle a lot to get rid of: noise. During this constant struggle and maintenance, we do not necessarily realize how much noise we are removing. 
 
 By leaving only noise and integrating the noise into speed, and then into distance (as would be done with real “valuable” data), we can visualize how much we would believe the part traveled without proper “information maintenance”. This concept not only relates to sensors, but also to how we can erroneously or distortedly assess informations about people, the world, relationships. As we cannot integrate the error of an assessment of a person over time, we are left to use sensors as metaphors.
+
+## Concept
+
+> A concept text (~500 words) outlining your idea, its relevance to you and society and theoretical references and fundaments. 
+
+#### Negative outlook: Epistemological Nihilism
+No data is trustable, etc
+
+#### Positive outlook: Something out of nothing
+Even with a violenty nihilistic approach, after there is no information left, if there is conscience to interpret the data, we can create meaning.
 
 
 ## Main References
