@@ -70,7 +70,11 @@ The fact that the subject is still and you can use time to cheat when generating
 </p>
 
 
+**Whale Vocalization**
 
+Not necessarily within the capabilities of human hearing, but modified to be hearable, etc.
+
+https://en.wikipedia.org/wiki/Whale_vocalization
 
 
 **Vertigo**
@@ -277,3 +281,7 @@ STLs can be interactively viewed <a href="https://render.githubusercontent.com/v
 
 
 ## Next Steps
+
+ - Implement data splitting by distance (i.e.: take 600000 datapoints, integrate til it reaches 100km, split the data and continue)
+ - Test python for RAW files manipulation
+ - 
