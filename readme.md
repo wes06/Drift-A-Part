@@ -4,6 +4,7 @@
 ### _Something out of nothing_
 
 <p align="left" style="float: left;">
+	<img src="Imgs/drift-a-part-v0.gif" height="250"/>
   <img src="Imgs/test2.gif" height="250"/>
 </p>
 
