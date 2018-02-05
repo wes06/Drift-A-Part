@@ -278,6 +278,10 @@ STLs can be interactively viewed <a href="https://github.com/wes06/Drift-A-Part/
 
 STLs can be interactively viewed <a href="https://render.githubusercontent.com/view/solid?url=https://raw.githubusercontent.com/wes06/Drift-A-Part/master/Mechanical%20Parts/Kuka%20Lights/LED%20Holder%20-%20Inclinado.STL" target="_blank">here</a>.
 
+### PHOTOSHOP
+
+Manual blending of the images to generate test videos/GIFs. If the videos/GIFs are interesting enough, then automate the process.
+
 
 
 
@@ -286,3 +290,17 @@ STLs can be interactively viewed <a href="https://render.githubusercontent.com/v
  - Implement data splitting by distance (i.e.: take 600000 datapoints, integrate til it reaches 100km, split the data and continue)
  - Test python for RAW files manipulation
  - 
+
+
+## Acknowledgements
+
+### Robots in Architecture / Prof. Johannes Braumann
+
+### Ben Olsen / Fabian Frei
+	
+For some help in python
+
+### Kevan Croton / DH5
+
+For a sacrificial Ping Pong Ball
+
