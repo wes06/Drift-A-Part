@@ -42,6 +42,18 @@ There are two possible outlooks for this process, a negative one - an epistemolo
 
 ## <a name="presentation-formats"></a>Potential presentation formats at Ars Electronica
 
+The main components of the project are the tools which I used during the gathering and generation of the datapoints:
+
+- The datalogger
+- The python scripts
+
+And the tools which I used to transform those datapoints into the visualizations:
+
+- Grasshopper
+- The kuka robot
+- 3D printed parts for the LED and diffuser
+
+I assume it will be impossible to use a robot in the Ars Electronica presentation so the more viable format would probably be presenting the objects (the datalogger consists of a circuit in a 3D printed bed attached to a ~3kg solid steel vise), some images of the in between process of data transformation, and some prints of the photos alongisde a screen demonstrating the GIFs. (I have more photos from which I haven't generated GIFs yet). If necessary I can probably access the robots again and generate more images too.
 
 
 
