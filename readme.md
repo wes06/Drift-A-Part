@@ -35,17 +35,6 @@ This experiment goes from a datalogger (to record the noise), through geometric 
 There are two possible outlooks for this process, a negative one - an epistemological nihilism, where data is intrinsically untrustable, as in the shoreline paradox: the more you measure a shoreline the longer it seems. And a positive one - out of nothing, we can create something. That is, while the post-modernists where correct that there are an infinite set of possible interpretations to a finite set of arguments (that is partially why true A.I. turns out to be so difficult to achieve), its incorrect to assume that none of them are more desirable or believable than the others (that is why we struggle to continue being something instead of nothing).
 
 
-## Concept
-
-> A concept text (~500 words) outlining your idea, its relevance to you and society and theoretical references and fundaments. 
-
-#### Negative outlook: Epistemological Nihilism
-No data is trustable, etc
-
-#### Positive outlook: Something out of nothing
-Even with a violenty nihilistic approach, after there is no information left, if there is conscience to interpret the data, we can create meaning.
-
-
 ## Main References
 
 **Dead Reckoning**
