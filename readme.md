@@ -6,6 +6,8 @@
 <p align="left" style="float: left;">
 	<img src="Imgs/dapV0-250.gif" height="250"/>
   <img src="Imgs/test2.gif" height="250"/>
+  <img src="Imgs/_DSC6554.jpg" height="300"/>
+  <img src="Imgs/LED extender.png" height="300"/>
 </p>
 
 
@@ -17,6 +19,7 @@
 
 * [Motivation and Description](#motivation-description)
 * [Relevance to Ars Electronica 2018](#relevance)
+* [Potential presentation formats](#presentation-formats)
 
 ## <a name="motivation-description"></a>Motivation and Description
 
@@ -32,7 +35,14 @@ Drift A Part explores the reverse: by removing hardware filters, real time weigh
 
 This experiment goes from a datalogger (to record the noise), through geometric transformations (to explore the shape of error and noise), to a series of images: the drawing of a virtual movement that never actually happened.
 
-There are two possible outlooks for this process, a negative one - an epistemological nihilism, where data is intrinsically untrustable, as in the shoreline paradox: the more you measure a shoreline the longer it seems. And a positive one - out of nothing, we can create something. That is, while the post-modernists where correct that there are an infinite set of possible interpretations to a finite set of arguments (that is partially why true A.I. turns out to be so difficult to achieve), its incorrect to assume that none of them are more desirable or believable than the others (that is why we struggle to continue being something instead of nothing).
+There are two possible outlooks for this process, a negative one - an epistemological nihilism, where data is intrinsically untrustable, backed by concepts such as the shoreline paradox: the more you measure a shoreline the longer it seems, Godels incompleteness theorem (a system is either incomplete or inconsistent/contraditory, it cant be consistent and complete) / Turings Halting problem and Heisenbergs uncertainty principle. And a positive one - out of nothing, we can create something. That is, while the post-modernists where correct that there are an infinite set of possible interpretations to a finite set of arguments (that is partially why true A.I. turns out to be so difficult to achieve), its incorrect to assume that none of them are more desirable or believable than the others (perhaps why we struggle to continue being something instead of nothing). Here the purpose of "meaning" and therefore the interpretation of the data by the viewer is put in contrast with the negative outlook: while the exploration of the technically precise leads to more and more uncertainty, it is in the realm of infinities of interpretations that we may find "survivability", that is, some sort of personal understanding or path. This contrast is (probably) nicely illustrated by the Heideggerian concepts of present-at-hand versus ready-to-hand (...) Other related works are Krippendorfs Semantic Turn, which puts meaning as the central object of Design in the information age, (...)
+
+
+
+
+## <a name="presentation-formats"></a>Potential presentation formats at Ars Electronica
+
+
 
 
 ## Main References
@@ -57,6 +67,8 @@ There are two possible outlooks for this process, a negative one - an epistemolo
 >2. the avenging or punishing of past mistakes or misdeeds.
 
 **One-electron Universe**
+
+A postulate that argues that all entities in the universe are actually a single particle that can travel in time. That is, if an object can move in a dimension in a way that is unperceivable by us, its essentially simultaneous / teleporting. 
 
 
 <a href="https://en.wikipedia.org/wiki/One-electron_universe" target="_blank">Wikipedia</a> on One-electron Universe. <br>
